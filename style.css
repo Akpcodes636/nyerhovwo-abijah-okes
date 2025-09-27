@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: Nunito, sans-serif;
     margin: 0;
@@ -11,8 +17,9 @@ svg{
     width: 25px;
 }
 header{
-    width: 1200px;
-    max-width: 90%;
+    /* width: 1200px; */
+    /* max-width: 90%; */
+    padding: 0 20px;
     margin: auto;
     display: grid;
     grid-template-columns: 50px 1fr 50px;
@@ -35,11 +42,16 @@ header .menu{
     font-weight: 500;
 }
 /* css slider */
-.slider{
+/* .slider{
     height: 100vh;
     margin-top: -50px;
     position: relative;
+} */
+.slider {
+    height: calc(100vh - 50px); /* subtract header height */
+    margin-top: 0;
 }
+
 .slider .list .item{
     position: absolute;
     inset: 0 0 0 0;
