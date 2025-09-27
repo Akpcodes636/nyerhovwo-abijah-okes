@@ -18,24 +18,24 @@
     <!-- header -->
     <header>
       <div class="logo">NY</div>
-      <ul class="menu"></ul>
-      <div class="search">
-        <svg
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 20 20"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-          />
-        </svg>
-      </div>
+    
+      <ul class="menu">
+        <li>
+          <button id="playMusic" style="background:none; border:none; cursor:pointer; color:white;">
+            <!-- Play icon -->
+            <svg id="musicIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="white">
+              <path d="M96 52v408l320-204L96 52z"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
     </header>
+    
+    
+    <!-- Audio file -->
+    <audio id="myAudio" src="./audio/Nathaniel_Bassey_-_Jesus_Iye_CeeNaija.com_.mp3" preload="none"></audio>
+    
+  
 
     <!-- slider -->
 

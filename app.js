@@ -144,3 +144,21 @@ closeThankYou.addEventListener("click", () => {
     // bring the form back if you want another response
     form.classList.remove("hidden");
   });
+
+
+  const playButton = document.getElementById("playMusic");
+  const audio = document.getElementById("myAudio");
+  const icon = document.getElementById("musicIcon");
+
+  // Play/Pause toggle
+  playButton.addEventListener("click", () => {
+    if(audio.paused){
+      audio.play();
+      // Change to pause icon
+      icon.innerHTML = '<path d="M144 479h-48c-26.51 0-48-21.49-48-48V81c0-26.51 21.49-48 48-48h48c26.51 0 48 21.49 48 48v350c0 26.51-21.49 48-48 48zm208-48V81c0-26.51 21.49-48 48-48h48c26.51 0 48 21.49 48 48v350c0 26.51-21.49 48-48 48h-48c-26.51 0-48-21.49-48-48z"/>';
+    } else {
+      audio.pause();
+      // Change back to play icon
+      icon.innerHTML = '<path d="M96 52v408l320-204L96 52z"/>';
+    }
+  });
