@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Big 30 | </title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="image/favicon-48x48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">NY</div>
+      <ul class="menu"></ul>
+      <div class="search">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 20 20"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <!-- slider -->
+
+    <div class="slider">
+      <!-- list Items -->
+      <div class="list">
+        <div class="item active">
+          <img src="image/photo-1.jpg" />
+          <div class="content">
+            <h2>Memories</h2>
+            <p>
+              Share your favorite memory of me — the moment that still makes you
+              smile.
+            </p>
+            <a class="cta-btn show-modal"
+              >Share Memory</a
+            >
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="image/photo-2.jpg" />
+          <div class="content">
+            <h2>Commendations</h2>
+            <p>What do you admire about me? Big or small — I&apos;d love to know.</p>
+            <a class="cta-btn show-modal"
+              >Send Commendation</a
+            >
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="image/photo-3.jpg" />
+          <div class="content">
+            <h2>The Next Decade</h2>
+            <p>
+              What&apos;s one thing you think I can do better as I step into my
+              30s?
+            </p>
+            <a  class="cta-btn show-modal"
+              >Give Advice</a
+            >
+          </div>
+        </div>
+
+        <!-- <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Slider 04</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div> -->
+        <!-- <div class="item">
+                <img src="image/img5.jpg">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Slider 05</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div> -->
+      </div>
+      <!-- button arrows -->
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <!-- thumbnail -->
+       <div class="thumbnail hide-scroll">
+        <div class="item active">
+          <img src="image/photo-1.jpg" />
+          <!-- <div class="content">
+                    Name Slider
+                </div> -->
+         </div>
+         <div class="item">
+          <img src="image/photo-2.jpg" />
+          <!-- <div class="content">
+                    Name Slider
+                </div> --> 
+         </div>
+         <div class="item">
+          <img src="image/photo-3.jpg" />
+          <!-- <div class="content">
+                    Name Slider
+                </div> -->
+        </div> 
+      </div> 
+
+      <!-- modals -->
+     <!-- Modal -->
+<div class="modal hidden">
+    <button class="close-modal">&times;</button>
+    <!-- <form action="https://docs.google.com/forms/d/e/1bsVrx_yVcG8n94th5uQIZkHKAWbheL93T550Xn88I34/formResponse" method="POST" target="_self"> -->
+        <!-- <form action="https://docs.google.com/forms/d/e/1FAIpQLScIkaIwlaFdkarXR1ZJvcAz1deTkuU7dP_gL1nTjRb6_TKDIw/formResponse" 
+      method="POST" 
+      target="_self" id="birthdayForm"> -->
+    <form id="birthdayForm">
+      <label>What&apos;s your favorite memory of us together?</label>
+      <textarea name="entry.487316993" required></textarea>
+  
+      <label>What&apos;s a strength or quality of mine you think I should never lose?</label>
+      <textarea name="entry.1546755805"></textarea>
+  
+      <label>What advice would you give me for the next decade of my life?</label>
+      <textarea name="entry.1616128586"></textarea>
+  
+      <label>If my life was a movie, what would its title be?</label>
+      <input type="text" name="entry.1358316791">
+  
+      <button type="submit" class="submit-btn">Submit </button>
+    </form>
+  </div>
+  <div id="thankYouMessage" class="hidden">
+    <h2>💖 Thank You!</h2>
+    <p>Your message has been saved. Can’t wait to read it!</p>
+    <button id="closeThankYou" class="submit-btn">Close</button>
+  </div>
+  
+  <div class="overlay hidden"></div>
+  
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
