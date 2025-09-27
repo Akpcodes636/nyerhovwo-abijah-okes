@@ -17,15 +17,11 @@ svg{
     width: 25px;
 }
 header{
-    
         position: fixed; /* keep header visible at top */
         top: 0;
         left: 0;
         width: 100%;
         z-index: 1000; /* above slider */
-    
-    /* width: 1200px; */
-    /* max-width: 90%; */
     padding: 0 20px;
     margin: auto;
     display: grid;
@@ -245,8 +241,8 @@ header .menu{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 1200px;
     background: #111; /* match slider dark theme */
     color: #eee;
     padding: 20px 40px;
