@@ -17,6 +17,13 @@ svg{
     width: 25px;
 }
 header{
+    
+        position: fixed; /* keep header visible at top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* above slider */
+    
     /* width: 1200px; */
     /* max-width: 90%; */
     padding: 0 20px;
@@ -27,7 +34,7 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 100;
+    /* z-index: 100; */
 }
 header .logo{
     font-weight: bold;
